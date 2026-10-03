@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Michael &amp; Natalia</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Caveat:wght@400..700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="locked">
+
+<!-- ===== 1. ENVELOPE COVER ===== -->
+<div class="envelope" id="envelope">
+  <div class="env-paper"></div>
+  <div class="env-flap env-flap-top"></div>
+  <div class="env-flap env-flap-left"></div>
+  <div class="env-flap env-flap-right"></div>
+  <div class="env-flap env-flap-bottom"></div>
+  <svg class="env-botanical" viewBox="0 0 200 260" aria-hidden="true">
+    <path d="M20 210 C70 170 120 120 190 40" />
+    <path d="M100 150 C120 130 150 120 170 60" />
+    <path d="M20 210 c-14 -18 -10 -34 4 -40 c12 -5 18 8 12 20 c-4 9 -11 14 -16 20z" />
+    <path d="M20 210 c18 -12 34 -6 36 8 c2 12 -12 16 -22 8 c-7 -5 -11 -11 -14 -16z" />
+    <path d="M170 60 c-14 -16 -10 -32 3 -38 c12 -5 18 8 12 20 c-4 9 -10 13 -15 18z" />
+    <path d="M170 60 c17 -12 33 -7 35 7 c2 12 -12 16 -22 8 c-6 -4 -10 -10 -13 -15z" />
+  </svg>
+  <button class="seal" id="sealBtn" type="button" aria-label="Open the invitation">
+    <img src="images/wax-seal.png" alt="Gold wax seal with olive branch" width="512" height="512" />
+  </button>
+  <p class="env-cta">Click to open</p>
+</div>
+
+<!-- ===== 2. "YOU ARE INVITED" INTRO ===== -->
+<div class="intro" id="intro" aria-hidden="true">
+  <svg class="sprig sprig-top" viewBox="0 0 120 260" aria-hidden="true">
+    <path class="dash" d="M60 250 L60 20" />
+    <path class="dash" d="M60 40 c-12 -4 -18 -14 -12 -22 c5 -7 14 -3 14 6 M60 40 c12 -4 18 -14 12 -22 c-5 -7 -14 -3 -14 6" />
+    <path class="dash" d="M60 90 c-16 -5 -24 -18 -16 -28 c7 -9 18 -3 18 8 M60 90 c16 -5 24 -18 16 -28 c-7 -9 -18 -3 -18 8" />
+    <path class="dash" d="M60 140 c-18 -6 -27 -20 -18 -31 c8 -10 20 -3 20 9 M60 140 c18 -6 27 -20 18 -31 c-8 -10 -20 -3 -20 9" />
+    <path class="dash" d="M60 190 c-20 -6 -30 -22 -20 -34 c9 -11 22 -3 22 10 M60 190 c20 -6 30 -22 20 -34 c-9 -11 -22 -3 -22 10" />
+  </svg>
+  <p class="intro-text">You are invited!</p>
+  <svg class="sprig sprig-bottom" viewBox="0 0 120 260" aria-hidden="true">
+    <path class="dash" d="M62 10 C56 90 52 170 46 250" />
+    <path class="dash" d="M56 90 C30 80 16 96 12 108 C34 112 50 104 56 90" />
+    <path class="dash" d="M58 70 C84 58 100 70 106 82 C84 92 66 86 58 70" />
+  </svg>
+</div>
+
+<!-- ===== MAIN SITE ===== -->
+<main id="site" class="site">
+
+  <!-- HERO -->
+  <section class="hero reveal-root">
+    <p class="eyebrow rv">M &amp; N &middot; 2026</p>
+    <p class="script hero-script rv">we're getting married</p>
+    <h1 class="hero-names rv">Michael <em>&amp;</em><br />Natalia</h1>
+    <div class="hero-photos">
+      <figure class="hero-photo hero-photo-a rv">
+        <img src="images/moment-1.jpg" alt="Michael and Natalia taking a mirror selfie" width="800" height="1000" />
+      </figure>
+      <figure class="hero-photo hero-photo-b rv">
+        <img src="images/moment-2.jpg" alt="Michael and Natalia laughing together" width="800" height="1000" />
+      </figure>
+    </div>
+    <p class="scroll-hint">SCROLL &darr;</p>
+  </section>
+
+  <!-- SAVE THE DATE -->
+  <section class="save-date reveal-root">
+    <h2 class="std-title rv">
+      <span class="std-line-1">SAVE</span>
+      <span class="std-line-2"><em class="script">the</em>DATE!</span>
+    </h2>
+    <img class="std-art rv" src="images/couple-lineart.png" alt="Line drawing of a bride and groom showing their rings" width="1024" height="1024" loading="lazy" />
+    <hr class="rule rv" />
+    <p class="std-names rv">MICHAEL + NATALIA</p>
+    <p class="std-date rv">30 . 11 . 2026</p>
+  </section>
+
+  <!-- VENUE -->
+  <section class="venue reveal-root">
+    <div class="venue-bg"></div>
+    <div class="venue-inner">
+      <h2 class="venue-title rv">Under one<br /><em>very full</em> moon.</h2>
+      <div class="venue-row rv"><span class="label">VENUE</span><p>The Moonhouse Estate</p></div>
+      <div class="venue-row rv"><span class="label">WHEN</span><p>30 Nov 2026 &middot; 6pm</p></div>
+      <div class="venue-row rv"><span class="label">DRESS</span><p>Soft pastels</p></div>
+      <a class="ghost-btn rv" href="https://maps.google.com/?q=The+Moonhouse+Estate" target="_blank" rel="noopener">OPEN IN MAPS <span aria-hidden="true">&#8599;</span></a>
+    </div>
+  </section>
+
+  <!-- PROGRAM -->
+  <section class="program reveal-root">
+    <p class="script program-kicker rv">How the day unfolds</p>
+    <h2 class="section-title rv">The program</h2>
+    <ol class="timeline">
+      <li class="rv"><p class="t-time">4:30 PM</p><h3 class="t-name">WELCOME &amp; ARRIVALS</h3><p class="t-desc">Sip something cold, find your seat.</p></li>
+      <li class="rv"><p class="t-time">6:00 PM</p><h3 class="t-name">THE CEREMONY</h3><p class="t-desc">Where the forever part happens.</p></li>
+      <li class="rv"><p class="t-time">8:00 PM</p><h3 class="t-name">DINNER UNDER THE STARS</h3><p class="t-desc">Three courses, many speeches.</p></li>
+      <li class="rv"><p class="t-time">12:00 AM</p><h3 class="t-name">LATE NIGHT BITES</h3><p class="t-desc">Because love makes you hungry.</p></li>
+    </ol>
+    <p class="script note rv">Stay as late as your heart wants <span class="flower">&#10048;</span></p>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery reveal-root">
+    <h2 class="gallery-title rv">Moments, Framed.</h2>
+    <p class="gallery-sub rv">A love letter, in fragments. Tap, hover, linger.</p>
+    <div class="gallery-grid">
+      <figure class="rv"><img src="images/moment-1.jpg" alt="Mirror selfie of the couple" width="800" height="1000" loading="lazy" /></figure>
+      <figure class="rv"><img src="images/moment-2.jpg" alt="The couple laughing on a sofa" width="800" height="1000" loading="lazy" /></figure>
+      <figure class="rv"><img src="images/moment-3.jpg" alt="Holding hands at the cinema" width="800" height="1000" loading="lazy" /></figure>
+      <figure class="rv"><img src="images/moment-4.jpg" alt="Painting handprints on a picnic blanket" width="800" height="1000" loading="lazy" /></figure>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown reveal-root">
+    <h2 class="section-title rv">Counting the days</h2>
+    <div class="count-grid">
+      <div class="count-card rv"><span class="count-num" id="cd-days">000</span><span class="count-label">DAYS</span></div>
+      <div class="count-card rv"><span class="count-num" id="cd-hours">00</span><span class="count-label">HOURS</span></div>
+      <div class="count-card rv"><span class="count-num" id="cd-mins">00</span><span class="count-label">MINUTES</span></div>
+      <div class="count-card rv"><span class="count-num" id="cd-secs">00</span><span class="count-label">SECONDS</span></div>
+    </div>
+    <p class="script note rv">Until forever begins <span class="flower">&#10048;</span></p>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="closing reveal-root">
+    <hr class="short-rule rv" />
+    <h2 class="closing-title rv">We're so excited to see you!</h2>
+    <p class="closing-text rv">Our next chapter starts with all of you beside us. See you on our special day.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-names">Michael <em>&amp;</em> Natalia</p>
+    <p class="footer-date">30 . 11 . 2026</p>
+    <p class="footer-credit">CREATED BY &nbsp;M &amp; N</p>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="#" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M16.5 3c.4 2 1.6 3.4 3.5 3.6v2.5c-1.3.1-2.5-.3-3.6-1v5.7a5.2 5.2 0 1 1-4.5-5.2v2.7a2.6 2.6 0 1 0 1.9 2.5V3h2.7z"/></svg>
+      </a>
+    </div>
+  </footer>
+</main>
+
+<!-- MUSIC TOGGLE -->
+<button class="music-btn" id="musicBtn" type="button" aria-label="Toggle music" aria-pressed="false">
+  <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
